@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Georgia, serif;
+}
+h1 {
+	text-align: center;
+}
+p.titre {
+	border-left:  5px   solid black ;
+	border-bottom: 5px solid black ;
+	margin-left: 0px;
+	margin-top: 0px ;
+	width: 20%;
+	float: right;
+	text-align: center;
+	font-weight: bold;
+
+}
+section {
+	border: 5px solid black ;
+	float: left;
+	
+	margin: 2px;
+	background-color: grey;
+}
+
+p.text {
+	clear: both;
+	margin: 10px ;
+}
+section:nth-child(1) .titre {
+	background-color: pink; 
+}
+section:nth-child(2) .titre {
+	background-color: red; 
+}
+section:nth-child(3) .titre {
+	background-color: yellow; 
+}
+@media (min-width:992px) {
+	section {
+		width: 32.5% ; }
+}
+@media (min-width:768px) and (max-width: 991px){
+	section.first {
+		width: 48% ; }
+	section.second {
+		width: 48%
+	}
+	section.third {
+		width:  96%
+	}
+}
+
